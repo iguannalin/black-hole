@@ -13,10 +13,11 @@ window.addEventListener("load", () => {
   const header  =document.getElementById('header');
   
   function reset() {
+    console.log(speed);
     if (speed > 20) speed = 5;
     top = getRandomInt(h);
     left = getRandomInt(w);
-    personLeft = left+300;
+    personLeft = left+400;
     person.innerText = people[getRandomInt(people.length)].split(" ")[0];
     person.style.top = `${top}px`;
     setInterval(() => {
